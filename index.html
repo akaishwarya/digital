@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISHWARYA-Portfolio</title>
+    <style>
+        body{
+            font-family: italic;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(19, 14, 14);
+            font-size: 15px;
+
+        }
+        header{
+            background-color: #313131;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+
+margin: 18px;
+border-radius: 35px;
+            position: relative;
+
+        }
+        .header-contant {
+      font-size: 2.5rem;
+ }
+.profile-picture{
+    width:150px;
+    height: 150px;
+    border-radius: 75%;
+    object-fit: cover;
+    position: absolute; 
+    top: 15px;
+    left: 75px;
+}
+nav{
+    background-color:rgb(68, 67, 67);
+    color: #fff;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 2px;
+    border-radius: 35px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.section-content{
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10 px rgba(0,0,0,0.1);
+}
+.download-button{
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 10px;
+} 
+.download-button:hover{
+    background-color: 
+    #555;
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="aishu2.png" alt="" class="profile-picture">
+            <h1>Aishwarya</h1>
+            <p>Student</p>
+        </div>
+    </header>
+    <nav>
+<ul>
+    <li> <a href="#about">About</a>
+    </li>
+    <li><a href="#Education">Education</a></li>
+    <li><a href="#Skills">Skills</a></li>
+    <li><a href="#Resume">Resume</a></li>
+</ul>
+    </nav>
+    <section id="About">
+        <div class="section-content">
+<h2>About Me </h2>
+<p>i'm Aishwarya.i'm currently pursuing BSC.IT at Mohamed Sathak Hamid college of arts and Science.</p>
+
+        </div>
+    </section>
+    <section id="Education">
+        <div class="section-content">
+<h2>BSC.IT</h2>
+<p>Mohamed Sathak Hamid College of Arts and Science for Women</p>
+  </div>
+    </section>
+    <section id="Skills">
+        <div class="section-content">
+<h2>Skills</h2>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    
+    <li>JAVASCRIPT</li>
+    
+    <li>EXCEL</li>
+</ul>
+    </div>
+    </section>    
+    <section id="Resume"><center>
+        <div class="section-content">
+    <h2>Resume</h2>
+    <a href="" class="download-button">Download CV</a>
+        </center>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>
+        {
+            anchor.addEventListener('click',function(e){
+                e.preventDefault();
+                const targeld=this.getAttribute('href').substring(1);
+                const targetElement=document.getElementById(targeld);
+                if(targetElement){
+                    window.scrollTo({top:targetElement.offsetTop,behavior:'smooth'});
+                }
+            });
+        });
+                
+    
+    </script>
+</body>
+</html>
